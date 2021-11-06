@@ -1,0 +1,57 @@
+@media (min-width: 1024px) {
+	.personal {
+		display: flex;
+		align-items: center;
+
+		&__account {
+			display: flex;
+			align-items: center;
+
+			&_btn--avatar {
+				margin-right: var(--mar-right-12);
+			}
+
+			& button {
+				background: 0;
+				border: 0;
+				box-shadow: none;
+				outline: 0;
+				padding: 0;
+				cursor: pointer;
+			}
+		}
+
+		&__wallet {
+			margin-right: 34px;
+			display: flex;
+			align-items: center;
+
+			& span {
+				margin-left: 10px;
+				vertical-align: super;
+				font-family: var(--base-font);
+				color: var(--base-color);
+				font-weight: normal;
+				font-size: var(--fs-18);
+				line-height: var(--line-height-133);
+			}
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.personal__wallet {
+		display: flex;
+		align-items: flex-end;
+
+		& span {
+			font-size: var(--fs-18);
+			color: var(--base-color);
+			line-height: var(--line-height-133);
+		}
+
+		& svg {
+			margin-right: var(--mar-right-12);
+		}
+	}
+}
