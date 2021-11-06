@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanc - новый банкинг для бизнеса</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+    <button class="header__btn only-mobile" type="button">
+			<svg aria-hidden="true" width="24" height="24">
+        <use href="./img/sprite.svg#burger"></use>
+      </svg>
+		</button>
+      <svg class="logo only-desktop" aria-hidden="true" width="75" height="19">
+        <use href="./img/sprite.svg#logo"></use>
+      </svg>
+      <div class="personal">
+        <div class="personal__wallet">
+          <svg aria-hidden="true" width="24" height="24">
+            <use href="./img/sprite.svg#wallet"></use>
+          </svg>
+          <span>24&nbsp;700₽</span>
+        </div>
+        <div class="personal__account only-desktop">
+          <svg aria-hidden="true" width="30" height="31">
+						<use href="./img/sprite.svg#agent"></use>
+					</svg>
+          <svg aria-hidden="true" width="24" height="24">
+            <use href="./img/sprite.svg#logout"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+  <main>
+    <section class="request">
+      <div class="request__wrapper">
+        <div class="request__title">
+					<div class="request__title_wrapper">
+	          <p>
+							Заявки
+						</p>
+	          <span>10&nbsp;276</span>
+	          <span>1&nbsp;276</span>
+	          <span>1&nbsp;237</span>
+					</div>
+					<div class="only-mobile">
+						<a class="request__title_add" href="/">
+							<svg aria-hidden="true" width="16" height="16">
+								<use href="./img/sprite.svg#plus"></use>
+							</svg>
+						</a>
+					</div>
+        </div>
+        <div class="request__date">
+          <div class="request__date_select">
+          <select name="year" id="year-select">
+						<option value="Год">Год</option>
+						<option value="2014">2014</option>
+						<option value="2014">2014</option>
+						<option value="2014">2014</option>
+						<option value="2014">2014</option>
+					</select>
+          </div>
+          <div class="request__date_calendar">
+            <label class="visually-hidden" for="start"></label>
+            <input type="date" placeholder="30 июн 2020 – 30 июн 2021"
+						min="2020-01-01" max="2021-12-31">
+          </div>
+        </div>
+      </div>
+      <div class="request__date_add">
+        <a class="only-desktop" href="/">Создать заявку</a>
+      </div>
+    </section>
+    <section class="request-status">
+      <section class="request-status__info">
+				<div class="request-status__info_container">
+					<div class="request-status__info_header request-status__info_header--top">
+						<p>В ожидании</p>
+						<span>154</span>
+						<span>37</span>
+					</div>
+					<svg class="only-desktop" aria-hidden="true">
+						<use href="./img/sprite.svg#arrow-top"></use>
+					</svg>
+					<div class="request-status__info_detail-wrapper request-status__show">
+						<div class="request-status__info_detail request-status__info_detail--wait">
+							<p>Назначение встречи</p>
+							<span>10&nbsp;231</span>
+							<span>31</span>
+						</div>
+						<div class="request-status__info_detail">
+							<p>Встреча назначена</p>
+							<span>123</span>
+						</div>
+					</div>
+				</div>
+				<div class="request-status__info_container">
+					<div class="request-status__info_header request-status__info_header--opened">
+						<p>Открыто счетов</p>
+						<span>262</span>
+						<span>37</span>
+					</div>
+					<svg class="only-desktop" aria-hidden="true">
+						<use href="./img/sprite.svg#arrow-top"></use>
+					</svg>
+					<div class="request-status__info_detail-wrapper">
+						<div class="request-status__info_detail">
+							<p>Активных</p>
+							<span>207</span>
+						</div>
+						<div class="request-status__info_detail">
+							<p>Неактивных</p>
+							<span>55</span>
+						</div>
+					</div>
+				</div>
+				<div class="request-status__info_container">
+					<div class="request-status__info_header request-status__info_header--reject">
+						<p>В отказе</p>
+						<span>37</span>
+					</div>
+					<svg class="only-desktop" aria-hidden="true">
+						<use href="./img/sprite.svg#arrow-top"></use>
+					</svg>
+					<div class="request-status__info_detail-wrapper">
+						<div class="request-status__info_detail">
+							<p>Банк</p>
+							<span>14</span>
+						</div>
+						<div class="request-status__info_detail">
+							<p>Клиент</p>
+							<span>10</span>
+						</div>
+						<div class="request-status__info_detail">
+							<p>Просрочено</p>
+							<span>13</span>
+						</div>
+						<div class="request-status__info_detail">
+							<p>Закрыто</p>
+							<span>13</span>
+						</div>
+					</div>
+				</div>
+				<div class="request-status__info_container">
+					<div class="request-status__info_header request-status__info_header--last">
+						<p>Ты заработал</p>
+						<span>20&nbsp;533&nbsp;500 ₽</span>
+						<span>10&nbsp;390&nbsp;000 ₽</span>
+					</div>
+					<svg class="only-desktop" aria-hidden="true">
+						<use href="./img/sprite.svg#arrow-top"></use>
+					</svg>
+					<div class="request-status__info_detail-wrapper">
+						<div class="request-status__info_detail">
+							<p>За активные</p>
+							<span>10&nbsp;310&nbsp;500 ₽</span>
+						</div>
+						<div class="request-status__info_detail">
+							<p>За открытые</p>
+							<span>10&nbsp;223&nbsp;000 ₽</span>
+						</div>
+					</div>
+				</div>
+			</section>
+      <div class="request-status__input">
+        <div class="request-status__input_wrapper">
+          <label class="visually-hidden" for=""></label>
+          <input type="text" placeholder="Расчетный счет">
+          <svg aria-hidden="true">
+						<use href="./img/sprite.svg#search"></use>
+					</svg>
+        </div>
+        <div class="request-status__input_mobile--container only-mobile">
+	        <div class="request-status__input_mobile">
+	          <label class="visually-hidden" for=""></label>
+	          <input type="text" placeholder="Номер телефона или карты">
+	          <svg class="request-status__input_mobile--svg" aria-hidden="true" width="24" height="24">
+							<use href="./img/sprite.svg#search"></use>
+						</svg>
+					</div>
+	          <div class="filter-button">
+							<svg aria-hidden="true" width="24" height="24">
+								<use href="./img/sprite.svg#settings"></use>
+							</svg>
+						</div>
+        </div>
+        <div class="request-status__select">
+					<select name="status" id="request-status">
+						<option value="Статус заявки">Статус заявки</option>
+						<option value="Встреча назначена">Встреча назначена</option>
+						<option value="Назначение встречи">Назначение встречи</option>
+						<option value="Отказ банка">Отказ банка</option>
+						<option value="Счёт открыт">Счёт открыт</option>
+					</select>
+        </div>
+      </div>
+      <div class="request-status__table request-table">
+        <div class="request-table__container">
+          <div class="request-table__row request-table--top">
+            <div class="request-table__head__title request-table__head__title--name">Создана</div>
+            <div class="request-table__head__title request-table__head__title--types">Компания</div>
+            <div class="request-table__head__title request-table__head__title--inn">ИНН</div>
+            <div class="request-table__head__title request-table__head__title--status">Статус</div>
+          </div>
+          <div class="request-table__body">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+                <span>1 сентября</span>
+                <span>14:45</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--types box-two"><a href="#modal" onClick='showDialog()'>ООО «ПР-Консалтинг»</a></div>
+              <div class="request-table__body_text request-table__body_text--inn box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>938517492735
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Назначение встречи
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>1 сентября</span>
+              <span>14:43</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two"><a href="#modal" onClick='showDialog()'> ООО «МИР ИДЕЙ»</a></div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>672940816473
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>31 августа</span>
+              <span>14:07</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ООО «СТРОЙ-ПЕТРО-СБЫТ и партнёры»</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>183926789365
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--active"></span>Счёт открыт
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>31 августа</span>
+              <span>17:58</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Мартынов Сергей Петрович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>183724058214
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--inactive"></span>Отказ банка
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+            <div class="request-table__row">
+              <div class="request-table__body_text request-table__body_text--name box-one">
+              <span>30 августа</span>
+              <span>16:24</span>
+              </div>
+              <div class="request-table__body_text request-table__body_text--inn box-two">ИП Воронин Арсений Михайлович</div>
+              <div class="request-table__body_text request-table__body_text--status box-three">
+              <span class="box-three--hidden">ИНН&nbsp;</span>758465926371
+              </div>
+              <div class="request-table__body_text request-table__body_text--status box-four">
+                <span class="status-indicator status-indicator--new"></span>Встреча назначена
+              </div>
+            </div>
+            <hr class="only-mobile">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- modal -->
+  <div class="overlay only-desktop" id="modal" aria-hidden="true">
+    <div class="modal fadeInRight animate">
+			<div class="modal__header">
+				<div class="modal__header_title">
+					<p>Заявка создана</p>
+					<span>1&nbsp;июня в 14:23</span>
+				</div>
+				<button id='close' onClick='closeDialog()' type="button">
+					<span>
+						<svg aria-hidden="true">
+							<use href="./img/sprite.svg#cross"></use>
+						</svg>
+					</span>
+				</button>
+			</div>
+			<div class="modal__container">
+				<div class="modal__title">
+					<h2>АНО ДПО "ИНСТИТУТ ГОСУДАРСТВЕННОГО УПРАВЛЕНИЯ И КВАЛИФИКАЦИИ СОТРУДНИКОВ"</h2>
+					<div class="modal__title_info">
+						<p>ИНН&nbsp;<span>154782356572356</span></p>
+						<p>ОГРН&nbsp;<span>15478293934</span></p>
+					</div>
+				</div>
+				<div class="modal__contacts">
+					<h3 class="modal__subtitle">Контакты</h3>
+					<div class="modal__subtitle_user">
+						<svg aria-hidden="true">
+							<use href="./img/sprite.svg#user"></use>
+						</svg>
+						<p>Вознесенский Михаил Петрович</p>
+					</div>
+					<div class="modal__subtitle_user">
+						<svg aria-hidden="true">
+							<use href="./img/sprite.svg#mobile"></use>
+						</svg>
+						<p>+7 (999) 111-11-44</p>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h3 class="modal__subtitle">Текущий статус заявки</h3>
+					<div class="modal__subtitle_status">
+						<div class="modal__subtitle_status--account">
+							<span class="status-indicator status-indicator--blue"></span>
+							<p>Счёт активен</p>
+						</div>
+						<span class="modal__subtitle_status--date">3 июня 11:02</span>
+					</div>
+					<p class="modal__info_text">Миссия выполнена — клиент совершил операцию по счёту.<br>Ты получаешь вознаграждение за активного клиента!</p>
+				</div>
+				<div class="modal__history">
+					<h3 class="modal__subtitle modal__subtitle_history">История заявки</h3>
+					<table class="modal__history_table modal-table">
+						<tbody>
+							<tr>
+								<td>
+									<span class="status-indicator status-indicator__table status-indicator--active"></span>
+								</td>
+								<th>
+									Счёт открыт
+								</th>
+								<td class="modal-table__date">2 июня 15:47</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="status-indicator status-indicator__table status-indicator--new"></span>
+								</td>
+								<th>
+									Встреча назначена
+								</th>
+								<td class="modal-table__date">1 июня 12:32</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="status-indicator status-indicator__table status-indicator--new"></span>
+								</td>
+								<th>
+									Назначение встречи
+								</th>
+								<td class="modal-table__date">31 мая 11:20</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+    </div>
+  </div>
+
+  <script>
+		const showDialog = () => {
+		  document.querySelector('.overlay').classList.add('show');
+		  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+		  const body = document.body;
+		  body.style.overflow = 'hidden';
+		  body.style.top = `-${scrollY}`;
+		};
+
+		const closeDialog = () => {
+		  const body = document.body;
+		  const scrollY = body.style.top;
+		  body.style.overflow = '';
+		  body.style.top = '';
+		  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+		  document.querySelector('.overlay').classList.remove('show');
+		};
+
+		window.addEventListener('scroll', () => {
+		  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+		});
+	</script>
+</body>
+
+</html>

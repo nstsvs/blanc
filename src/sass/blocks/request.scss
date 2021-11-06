@@ -1,0 +1,385 @@
+@media (min-width: 1024px) {
+	.request {
+		max-width: 1120px;
+		margin: var(--margin);
+		align-items: center;
+		margin-top: 64px;
+		margin-bottom: 32px;
+		display: flex;
+
+		&__wrapper {
+			display: flex;
+			align-items: center;
+		}
+
+		&__title {
+			display: flex;
+			align-items: baseline;
+			margin-right: 79px;
+		}
+
+		&__title p {
+			color: var(--base-color);
+			font-weight: bold;
+			font-size: 44px;
+			line-height: 120%;
+			margin: 0;
+			margin-right: var(--mar-right-12);
+		}
+
+		&__title span {
+			align-items: baseline;
+			color: var(--base-light-color);
+			font-weight: bold;
+			font-size: 32px;
+		}
+
+		&__date {
+			display: flex;
+			gap: 8px;
+		}
+
+		&__date_select,
+		&__date_calendar {
+			position: relative;
+		}
+
+		&__date_select select {
+			min-width: 180px;
+			width: var(--full-width);
+			height: var(--input-height);
+			border: none;
+			outline: none;
+			padding: 10px 16px;
+			margin-right: var(--mar-right-12);
+			border-radius: var(--border);
+			cursor: pointer;
+			background-color: var(--input-color);
+		}
+
+		&__date_select :optional {
+			font-family: var(--base-font);
+			color: var(--secondary-color);
+			font-size: 16px;
+			line-height: var(--line-height-150);
+		}
+
+		&__date_select svg {
+			position: absolute;
+			width: 14px;
+			height: 9px;
+			top: 18px;
+			right: 30px;
+		}
+
+		&__date_calendar input {
+			min-width: 278px;
+			width: var(--full-width);
+			height: var(--input-height);
+			border: none;
+			outline: none;
+			padding: 10px 16px;
+			border-radius: var(--border);
+			margin-right: 64px;
+			resize: none;
+			background-color: var(--input-color);
+		}
+
+		&__date_calendar input {
+			font-family: var(--base-font);
+			color: var(--secondary-color);
+			font-size: 16px;
+			line-height: var(--line-height-150);
+			align-items: flex-end;
+		}
+
+		&__date_add a {
+			width: 160px;
+			height: var(--input-height);
+		}
+
+		&__date_add a {
+			display: block;
+			background-color: var(--base-color);
+			border-radius: var(--border);
+			padding: 10px 20px;
+			font-size: 16px;
+			line-height: var(--line-height-150);
+			color: #FFFFFF;
+			text-decoration: none;
+			transition: background-color .4s,border-color .4s,color .4s;
+		}
+
+		&__date_add a:hover {
+			background-color: var(--soft-green-color);
+			color: var(--base-color);
+		}
+
+		&__title_wrapper {
+			display: flex;
+			align-items: baseline;
+		}
+	}
+
+	select {
+		background: url(../img/arrow-down.svg) no-repeat 90% 55%;
+		-webkit-appearance:none;
+	}
+
+	input[type=date]::-webkit-calendar-picker-indicator {
+		background: url(../img/calendar.svg) no-repeat 90% 55%;
+		cursor: pointer;
+	}
+	
+	.request__date_select select {
+		background: url(../img/arrow-down.svg) no-repeat 92% 55%;
+		background-color: var(--input-color);
+		-webkit-appearance:none;
+	}
+}
+
+@media (max-width: 1023px) {
+	.request__title span:nth-child(3),
+	.request__title span:nth-child(2) {
+		display: none;
+	}
+	
+	.request {
+		margin-top: 32px;
+		
+		&__title {
+			padding: 0 24px;
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		&__title_wrapper {
+			display: flex;
+			align-items: baseline;
+		}
+		
+		&__title p {
+			margin: 0;
+			margin-right: 8px;
+			color: var(--base-color);
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 100%;
+		}
+
+		&__title span {
+			color: var(--base-light-color);
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 30px;
+		}
+		
+		&__title_add {
+			background-color: var(--base-color);
+			padding: 12px 20px;
+			display: block;
+			border-radius: var(--border);
+			position: relative;
+			transition: background-color .4s,border-color .4s,color .4s;
+		}
+		
+		&__date_add:hover {
+			background-color: var(--soft-green-color);
+		}
+		
+		&__date_add:active {
+			background-color: var(--soft-green-color);
+		}
+		
+		&__title_add svg {
+			display: block;
+		}
+		
+		&__date {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			padding: 0 12px;
+			margin-top: 24px;
+		}
+		
+		&__date_select,
+		&__date_calendar {
+			position: relative;
+		}
+		
+		&__date_select select {
+			width: var(--full-width);
+			height: var(--input-height);
+			border: none;
+			outline: none;
+			padding: 10px 16px;
+			border-radius: var(--border);
+			cursor: pointer;
+			background-color: var(--input-color);
+		}
+		
+		&__date_select :optional {
+			font-family: var(--base-font);
+			color: var(--secondary-color);
+			font-size: 16px;
+			cursor: pointer;
+			line-height: var(--line-height-150);
+			align-items: flex-end;
+		}
+		
+		&__date_select svg {
+			position: absolute;
+			width: 14px;
+			height: 9px;
+			top: 18px;
+			right: 21px;
+		}
+		
+		&__date_calendar input {
+			width: var(--full-width);
+			height: var(--input-height);
+			border: none;
+			outline: none;
+			padding: 10px 16px;
+			border-radius: var(--border);
+			resize: none;
+			background-color: var(--input-color);
+		}
+		
+		&__date_calendar input {
+			font-family: var(--base-font);
+			color: var(--secondary-color);
+			font-size: 16px;
+			line-height: var(--line-height-150);
+			align-items: flex-end;
+		}
+	}
+
+	select {
+		background: url(../img/arrow-down.svg) no-repeat 97% 55%;
+		-webkit-appearance:none;
+    cursor: pointer;
+	}
+
+	input[type=date]::-webkit-calendar-picker-indicator {
+		background: url(../img/calendar.svg) no-repeat 90% 55%;
+		cursor: pointer;
+	}
+
+	.request__date_select select {
+		background: url(../img/arrow-down.svg) no-repeat 94% 55%;
+		background-color: var(--input-color);
+		-webkit-appearance:none;
+	}
+}
+
+@media (min-width: 625px) and (max-width: 767px) {
+	.request__date_select select {
+		background: url(../img/arrow-down.svg) no-repeat 96% 55%;
+		background-color: var(--input-color);
+		-webkit-appearance:none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.request__date_select select {
+		background: url(../img/arrow-down.svg) no-repeat 97% 55%;
+		background-color: var(--input-color);
+		-webkit-appearance:none;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+	.request {
+		padding: 0 18px;
+		gap: 52px;
+		justify-content: space-between;
+
+		&__wrapper {
+			width: var(--full-width);
+		}
+
+		&__date {
+			width: var(--full-width);
+		}
+
+		&__date_select {
+			width: var(--full-width);
+		}
+
+		&__date_calendar {
+			width: var(--full-width);
+		}
+
+		&__title span:nth-child(3),
+		&__title span:nth-child(4) {
+			display: none;
+		}
+	
+		&__title {
+			margin-right: 44px;
+		}
+	
+		&__title_wrapper {
+			align-items: baseline;
+		}
+	
+		&__date_calendar input {
+			margin-right: 0;
+		}
+	
+		&__date_calendar svg {
+			right: 16px;
+		}
+	
+		&__date_select select {
+			min-width: 180px;
+			width: var(--full-width);
+			height: var(--input-height);
+			border: none;
+			outline: none;
+			padding: 10px 16px;
+			margin-right: 0;
+			border-radius: var(--border);
+			resize: none;
+			background-color: var(--input-color);
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+	.request {
+		justify-content: space-between;
+
+		&__title span:nth-child(even) {
+			display: none;
+		}
+
+		&__date_calendar input {
+			min-width: 278px;
+			max-width: 330px;
+			width: var(--full-width);
+			height: var(--input-height);
+			border: none;
+			outline: none;
+			padding: 10px 16px;
+			border-radius: var(--border);
+			margin-right: 64px;
+			background-color: var(--input-color);
+		}
+
+		&__date {
+			gap: 12px;
+		}
+
+		&__date_select select {
+			width: 230px;
+			margin-right: 0;
+		}
+
+		&__date_calendar svg {
+			right: 30px;
+		}
+	}
+}

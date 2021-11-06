@@ -1,0 +1,63 @@
+{
+  "name": "blanc",
+  "version": "17.0.0",
+  "private": true,
+  "description": "blanc",
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "browser-sync": "^2.27.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.1",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-webp": "^4.0.1",
+    "posthtml-include": "^1.7.2",
+    "readable-stream": "^3.6.0",
+    "stylelint": "10.1.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "src/*.html",
+    "src/js/**/*.js",
+    "src/img/**/*.svg",
+    "src/img/**/*.ico",
+    "src/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "12.18.4"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gulp-copy": "^4.0.1",
+    "http-server": "^14.0.0",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "postcss-csso": "^5.0.0",
+    "postcss-import": "^14.0.0",
+    "postcss-media-minmax": "^5.0.0",
+    "refresh": "^1.0.1",
+    "sass": "^1.43.4",
+    "server": "^1.0.36"
+  }
+}
