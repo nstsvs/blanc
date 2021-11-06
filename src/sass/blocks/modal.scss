@@ -29,6 +29,7 @@
 	  &__header {
 			position: relative;
 			display: flex;
+			align-items: flex-end;
 			justify-content: space-between;
 			padding: 34px 44px;
 			padding-right: 32px;
@@ -440,7 +441,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 	.modal__header {
 		padding: 34px 44px;
 	}
