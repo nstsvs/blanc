@@ -28,15 +28,15 @@
 				top: 31px;
 			}
 
-			&_container:first-child {
+			&_container:nth-child(2) {
 				background-color: var(--soft-pink-color);
 			}
 
-			&_container:nth-child(2) {
+			&_container:nth-child(3) {
 				background-color: var(--soft-green-color);
 			}
 
-			&_container:nth-child(3) {
+			&_container:nth-child(4) {
 				background-color: var(--pink-color);
 			}
 
